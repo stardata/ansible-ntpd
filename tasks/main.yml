@@ -1,6 +1,6 @@
 ---
 # tasks file for ansible-ntpd
-- name: install ntpd
+- name: install and start ntpd
   yum: name=ntp state=latest
   notify:
     - restart ntpd
