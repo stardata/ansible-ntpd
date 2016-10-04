@@ -1,7 +1,7 @@
 ---
 # tasks file for ansible-ntpd
 - name: install ntpd
-  yum: name=ntpd state=latest
+  yum: name=ntp state=latest
   notify:
     - restart ntpd
 - name: make sure ntpd is enabled at boot
